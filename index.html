@@ -1,0 +1,899 @@
+<!-- /*
+* Template Name: Minimal
+* Template Author: Untree.co
+* Author URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="Harsith Reddy Karne - Data Professional & AWS AI/ML Scholar specializing in data engineering, AI agents, and machine learning. Available for data analyst, data scientist, and AI roles starting May 2026." />
+  <meta name="keywords" content="data scientist, data engineer, data analyst, AI, machine learning, AWS, SQL, Python, portfolio" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Custom styles for always visible navigation and fast animations -->
+  <style>
+    /* Fixed Navigation */
+    .site-nav {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background: rgba(0, 0, 0, 0.95) !important;
+      backdrop-filter: blur(10px) !important;
+      -webkit-backdrop-filter: blur(10px) !important;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
+      transition: all 0.1s ease-out !important;
+    }
+    
+    .site-navigation {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+    }
+    
+    /* Add top padding to body to account for fixed navbar */
+    body {
+      padding-top: 80px !important;
+    }
+    
+    /* Ultra-fast and smooth animations */
+    .gsap-reveal-hero {
+      transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    }
+    
+    /* Ultra-fast AOS animations */
+    [data-aos] {
+      transition-duration: 0.15s !important;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    
+    /* Instant scroll behavior */
+    html {
+      scroll-behavior: auto;
+    }
+    
+    /* Instant hover effects */
+    .nav-link, .btn {
+      transition: all 0.1s ease-out !important;
+    }
+    
+    /* Ultra-fast portfolio transitions */
+    .portfolio-item {
+      transition: all 0.1s ease-out !important;
+    }
+    
+    /* Fast form animations */
+    .form-control {
+      transition: all 0.1s ease-out !important;
+    }
+    
+    /* Portfolio grid layout fixes */
+    .portfolio-wrapper #posts {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 20px !important;
+      justify-content: flex-start !important;
+    }
+    
+    .isotope-mb-2 {
+      margin-bottom: 30px !important;
+      flex: 0 0 calc(33.333% - 15px) !important;
+      max-width: calc(33.333% - 15px) !important;
+    }
+    
+    @media (max-width: 991px) {
+      .isotope-mb-2 {
+        flex: 0 0 calc(50% - 10px) !important;
+        max-width: calc(50% - 10px) !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .isotope-mb-2 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+    
+    /* Ensure portfolio items have consistent height */
+    .portfolio-item {
+      display: block !important;
+      position: relative !important;
+      height: 300px !important;
+      overflow: hidden !important;
+      border-radius: 8px !important;
+    }
+    
+    .portfolio-placeholder {
+      height: 300px !important;
+    }
+    
+    /* Logo styling for fixed nav */
+    .logo {
+      font-size: 1.5rem !important;
+      font-weight: bold !important;
+      color: white !important;
+    }
+    
+    /* Navigation link styling for fixed nav */
+    .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500 !important;
+      padding: 8px 15px !important;
+      border-radius: 4px !important;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+      color: #0389ff !important;
+      background: rgba(3, 137, 255, 0.1) !important;
+    }
+    
+    @media (max-width: 991px) {
+      .site-nav-wrap {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        margin-top: 10px !important;
+      }
+      .site-nav-wrap li {
+        margin: 5px 10px !important;
+      }
+      .site-navigation {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 10px 0 !important;
+      }
+      .logo {
+        margin-bottom: 10px !important;
+      }
+      body {
+        padding-top: 120px !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .site-nav-wrap li {
+        margin: 3px 5px !important;
+      }
+      .nav-link {
+        font-size: 14px !important;
+        padding: 5px 10px !important;
+      }
+      body {
+        padding-top: 140px !important;
+      }
+    }
+  </style>
+
+  <title>Harsith Reddy Karne - Data Professional & AI/ML Scholar</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="lines-wrap">
+    <div class="lines-inner">
+      <div class="lines"></div>
+    </div>
+  </div>
+  <!-- END lines -->
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  
+  <nav class="site-nav dark mb-5 site-navbar-target">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">Harsith<span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-flex site-menu float-right site-nav-wrap" style="display: flex !important; list-style: none; margin: 0; padding: 0;">
+          <li style="margin-right: 20px;"><a href="#home-section" class="nav-link active">Home</a></li>
+          <li style="margin-right: 20px;"><a href="#about-section" class="nav-link">About</a></li>
+          <li style="margin-right: 20px;"><a href="#portfolio-section" class="nav-link">Projects</a></li>
+          <li style="margin-right: 20px;"><a href="#services-section" class="nav-link">Skills</a></li>
+          <li style="margin-right: 20px;"><a href="#resume-section" class="nav-link">Resume</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="untree_co-section pb-0" id="home-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8">
+          <h1 class="heading gsap-reveal-hero mb-3"><strong>Harsith Reddy Karne</strong></h1>
+          <h2 class="subheading gsap-reveal-hero mb-4">
+            Data Professional & <span class="text-primary">AWS AI/ML Scholar</span>
+          </h2>
+          <p class="gsap-reveal-hero mb-4">
+            Passionate about the intersection of data engineering and artificial intelligence. I specialize in building autonomous AI agents and architecting end-to-end ETL/ELT pipelines that power data-intensive applications.
+          </p>
+          <div class="gsap-reveal-hero">
+            <a href="#contact-section" class="btn btn-primary mr-3">Get In Touch</a>
+            <a href="#portfolio-section" class="btn btn-outline-black">View Projects</a>
+          </div>
+          <div class="gsap-reveal-hero mt-4">
+            <p class="mb-2"><strong>Available for full-time opportunities starting May 2026</strong></p>
+            <p class="text-muted">Data Engineering • Data Science • AI/ML • Data Analytics</p>
+            <div class="mt-3 p-3" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid #0389ff;">
+              <p class="mb-1"><strong>🌎 Open to onsite or remote opportunities • Willing to relocate</strong></p>
+              <p class="mb-0 text-success"><strong>✅ No visa sponsorship required</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="untree_co-section pb-0" id="about-section">
+    <div class="container">
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-7 mx-auto text-center author-wrap">
+          <img src="images/harsith_profile.jpg" alt="Harsith Reddy Karne" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+          <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Harsith Reddy Karne</h3>
+          <p class="gsap-reveal-hero">Data Professional & AWS AI/ML Scholar</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="gsap-reveal-hero">A results-driven data professional and AWS AI/ML scholar with a Master's in Information Systems. My passion lies in the intersection of data engineering and artificial intelligence, with hands-on experience in developing autonomous AI agents that convert natural language into executable SQL queries.</p>
+
+          <p class="gsap-reveal-hero">I specialize in architecting end-to-end ETL/ELT pipelines that power data-intensive applications and have a proven track record of improving diagnostic model accuracy by over 15% using advanced machine learning techniques.</p>
+
+          <p class="gsap-reveal-hero">My technical expertise spans across Python, SQL, AWS cloud services, machine learning frameworks, and modern data engineering tools. I'm particularly passionate about building AI-powered solutions that bridge the gap between complex data and actionable business insights.</p>
+
+          <p class="gsap-reveal-hero mb-3">I am actively seeking a full-time role beginning May 2026 where I can apply my expertise in AI and data to solve complex business challenges and drive data-driven decision making.</p>
+          
+
+
+          <div class="gsap-reveal-hero text-center">
+            <a href="https://www.linkedin.com/in/harsith-karne" target="_blank" class="btn btn-outline-black mr-3">LinkedIn</a>
+            <a href="https://github.com/hkarne?tab=repositories" target="_blank" class="btn btn-outline-black">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+    <div class="container">
+
+
+      <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+      <div id="portfolio-single-holder"></div>
+
+      <div class="portfolio-wrapper">
+
+        <div class="row mb-5">
+          <div class="col-lg-8 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-3"><strong>AI & Data Projects</strong></h2>
+            <p class="gsap-reveal-hero">A showcase of my work in data engineering, artificial intelligence, and analytics. Each project demonstrates hands-on experience with modern data technologies and AI frameworks.</p>
+            <div class="wave gsap-reveal-hero">
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+                  <div class="row">
+
+            <!-- Project 1: Natural Language to SQL AI Agent -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="project-card" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; height: 100%; background: white;">
+                <h4 class="text-primary mb-3">Natural Language to SQL AI Agent</h4>
+                <p class="text-muted mb-3">An intelligent AI system that converts natural language queries into executable SQL commands, making database interactions accessible for non-technical users.</p>
+                <div class="tech-stack mb-3">
+                  <span class="badge badge-light mr-2">Python</span>
+                  <span class="badge badge-light mr-2">PostgreSQL</span>
+                  <span class="badge badge-light mr-2">Gemini LLM</span>
+                  <span class="badge badge-light">Streamlit</span>
+                </div>
+                <a href="https://github.com/hkarne/Natural-Language-to-SQL-AI-Agent" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+              </div>
+            </div>
+
+            <!-- Project 2: E-Commerce Analytics Platform -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="project-card" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; height: 100%; background: white;">
+                <h4 class="text-primary mb-3">E-Commerce Analytics Platform</h4>
+                <p class="text-muted mb-3">Comprehensive analytics platform with real-time dashboards and predictive analytics for e-commerce businesses to optimize sales performance.</p>
+                <div class="tech-stack mb-3">
+                  <span class="badge badge-light mr-2">SQL</span>
+                  <span class="badge badge-light mr-2">PostgreSQL</span>
+                  <span class="badge badge-light mr-2">Python</span>
+                  <span class="badge badge-light">Tableau</span>
+                </div>
+                <a href="https://github.com/hkarne/E-Commerce-Analytics-Platform" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+              </div>
+            </div>
+
+            <!-- Project 3: NBA Performance Analytics -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="project-card" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; height: 100%; background: white;">
+                <h4 class="text-primary mb-3">NBA Performance Analytics</h4>
+                <p class="text-muted mb-3">End-to-end data pipeline processing 10+ years of sports data to identify key performance patterns and trends using advanced statistical analysis.</p>
+                <div class="tech-stack mb-3">
+                  <span class="badge badge-light mr-2">Python</span>
+                  <span class="badge badge-light mr-2">SQL</span>
+                  <span class="badge badge-light mr-2">Tableau</span>
+                  <span class="badge badge-light">Data Analysis</span>
+                </div>
+                <a href="https://github.com/hkarne/NBA-Injury--Analysis" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+              </div>
+            </div>
+
+            <!-- Project 4: Cryptocurrency Data Pipeline -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="project-card" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; height: 100%; background: white;">
+                <h4 class="text-primary mb-3">Cryptocurrency Data Pipeline</h4>
+                <p class="text-muted mb-3">Scalable real-time data pipeline processing cryptocurrency market data from multiple exchanges for comprehensive market analysis.</p>
+                <div class="tech-stack mb-3">
+                  <span class="badge badge-light mr-2">Python</span>
+                  <span class="badge badge-light mr-2">Apache Airflow</span>
+                  <span class="badge badge-light mr-2">AWS</span>
+                  <span class="badge badge-light">PostgreSQL</span>
+                </div>
+                <a href="https://github.com/hkarne/Crypto-Data-Pipeline" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+              </div>
+            </div>
+
+            <!-- Project 5: QR Code Generator -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="project-card" style="border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; height: 100%; background: white;">
+                <h4 class="text-primary mb-3">QR Code Generator Tool</h4>
+                <p class="text-muted mb-3">Interactive web application for generating custom QR codes with multiple format options and responsive design.</p>
+                <div class="tech-stack mb-3">
+                  <span class="badge badge-light mr-2">HTML</span>
+                  <span class="badge badge-light mr-2">CSS</span>
+                  <span class="badge badge-light mr-2">JavaScript</span>
+                  <span class="badge badge-light">Responsive</span>
+                </div>
+                <a href="https://github.com/hkarne/qrcode" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+              </div>
+            </div>
+
+            <!-- View All Projects -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="project-card text-center" style="border: 2px dashed #0389ff; border-radius: 8px; padding: 25px; height: 100%; background: #f8f9fa;">
+                <h4 class="text-primary mb-3">View All Projects</h4>
+                <p class="text-muted mb-3">Explore more data science, AI, and engineering projects on my GitHub profile.</p>
+                <a href="https://github.com/hkarne?tab=repositories" target="_blank" class="btn btn-primary">Visit GitHub Profile</a>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+
+        <!-- </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="untree_co-section pb-0" id="services-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Technical Skills</strong></h2>
+            <p class="gsap-reveal-hero">My expertise spans across the entire data ecosystem, from engineering pipelines to AI-powered analytics.</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-8.svg" alt="AI & Machine Learning" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">AI & Machine Learning</h3>
+              <p class="gsap-reveal-hero">Expertise in developing AI agents, natural language processing, and machine learning models using Python, TensorFlow, and cloud AI services.</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-9.svg" alt="Data Engineering" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Data Engineering</h3>
+              <p class="gsap-reveal-hero">Building scalable ETL/ELT pipelines, data warehouses, and real-time data processing systems using AWS, Python, and SQL.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-7.svg" alt="Data Analysis" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Data Analysis</h3>
+              <p class="gsap-reveal-hero">Advanced statistical analysis, data visualization, and business intelligence using Python, SQL, and modern analytics tools.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-5.svg" alt="Cloud Computing" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Cloud Computing</h3>
+              <p class="gsap-reveal-hero">AWS certified with hands-on experience in cloud data services, serverless computing, and scalable infrastructure design.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-4.svg" alt="Database Systems" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Database Systems</h3>
+              <p class="gsap-reveal-hero">Expert in SQL, PostgreSQL, NoSQL databases, and data modeling for both transactional and analytical workloads.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="service text-center">
+              <div class="gsap-reveal-hero mb-3">
+                <span class="icon-service"><img src="images/svg/service-icon-2.svg" alt="Programming" class="img-fluid"></span>
+              </div>
+              <h3 class="gsap-reveal-hero">Programming</h3>
+              <p class="gsap-reveal-hero">Proficient in Python, SQL, JavaScript, and various frameworks for data processing, web development, and automation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="untree_co-section pb-0">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Technical Proficiency</strong></h2>
+            <p class="gsap-reveal-hero">Core technologies and tools I work with on a daily basis.</p>
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="0">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="95">
+                <div class="number"></div>
+                <p class="caption">SQL</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="92">
+                <div class="number"></div>
+                <p class="caption">Python</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="88">
+                <div class="number"></div>
+                <p class="caption">AWS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="progressbar" data-animate="false">
+              <div class="circle" data-percent="85">
+                <div class="number"></div>
+                <p class="caption">Machine Learning</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section -->
+    <div class="untree_co-section" id="resume-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Resume</strong></h2>
+            <p class="gsap-reveal-hero">Professional Experience, Education & Achievements</p>
+            <div class="wave gsap-reveal-hero">
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+            <div class="gsap-reveal-hero mt-4">
+              <a href="Harsith_Reddy_Karne.pdf" download="Harsith_Karne_Resume.pdf" class="btn btn-primary btn-lg">
+                <span class="icon-download mr-2"></span>Download Resume PDF
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="gsap-reveal-hero">
+              <h3 class="text-primary mb-4">Professional Experience</h3>
+              
+              <!-- Experience 1 -->
+              <div class="experience-item mb-4 p-4" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid #0389ff;">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4 class="mb-2 text-primary font-weight-bold">Data Engineer Intern</h4>
+                    <h5 class="text-muted mb-2">Leftover Love Inc.</h5>
+                    <ul class="list-unstyled" style="line-height: 1.8;">
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Architected a comprehensive ETL pipeline to migrate legacy data from over 10 disparate spreadsheets into a centralized SQL database, streamlining data accessibility for 100+ users and resulting in an estimated 75% reduction in data retrieval time.</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Served as primary liaison with executive leadership to translate volunteer management business requirements into detailed technical specifications, facilitating the delivery of a data system that improved operational decision-making efficiency by 40%.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-md-right">
+                    <span class="badge badge-primary">Jun 2025 - Aug 2025</span>
+                    <p class="text-muted small mt-2">Oakland, MD</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 2 -->
+              <div class="experience-item mb-4 p-4" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid #0389ff;">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4 class="mb-2 text-primary font-weight-bold">Data Engineer</h4>
+                    <h5 class="text-muted mb-2">AICTE (All India Council For Technical Education)</h5>
+                    <ul class="list-unstyled" style="line-height: 1.8;">
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Engineered end-to-end data solutions by integrating diverse sources into Data Lakes, automating ETL processes, and migrating 30+ SQL scripts to HQL with Oozie Workflows, reducing manual workload by 20%.</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Spearheaded process automation using RPA for 5 critical security functions, slashing manual intervention by 50% and saving over 15 hours of work weekly.</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Improved overall system reliability by 30% through comprehensive root cause analysis of automation failures and created clear technical documentation that increased automation adoption by 40% across departments.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-md-right">
+                    <span class="badge badge-primary">May 2023 - July 2024</span>
+                    <p class="text-muted small mt-2">Hyderabad, India</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 3 -->
+              <div class="experience-item mb-4 p-4" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid #0389ff;">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4 class="mb-2 text-primary font-weight-bold">Data Analyst Intern</h4>
+                    <h5 class="text-muted mb-2">Palo Alto Networks</h5>
+                    <ul class="list-unstyled" style="line-height: 1.8;">
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Analyzed 50,000+ security logs weekly using advanced statistical methods, building predictive models that identified potential threats 48 hours earlier than previous systems.</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Created executive-level data visualizations and trend analysis reports in Tableau, directly informing strategic security investments and policy changes across the organization.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-md-right">
+                    <span class="badge badge-primary">March 2022 - May 2022</span>
+                    <p class="text-muted small mt-2">Hyderabad, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="gsap-reveal-hero">
+              <h3 class="text-primary mb-4">Education</h3>
+              
+              <!-- Education 1 -->
+              <div class="education-item mb-4 p-4" style="background: #e8f4fd; border-radius: 8px; border-left: 4px solid #0389ff;">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4 class="mb-2 text-primary font-weight-bold">Master of Science in Information Systems</h4>
+                    <h5 class="text-muted mb-2">University of Maryland, Robert H. Smith School of Business</h5>
+                    <p class="mb-2">Focus: Data Analysis and Engineering, Machine Learning, and AI Systems</p>
+                    <ul class="list-unstyled" style="line-height: 1.8;">
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Relevant Coursework: Database Systems, Machine Learning, Data Mining, Harnessing AI in Business</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Research Focus: AI-powered data analytics and natural language processing</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• GPA: 3.8/4.0</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-md-right">
+                    <span class="badge badge-info">Expected May 2026</span>
+                    <p class="text-muted small mt-2">College Park, MD</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education 2 -->
+              <div class="education-item mb-4 p-4" style="background: #e8f4fd; border-radius: 8px; border-left: 4px solid #0389ff;">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4 class="mb-2 text-primary font-weight-bold">Bachelor of Technology in Computer Science</h4>
+                    <h5 class="text-muted mb-2">Osmania University</h5>
+                    <p class="mb-2">Specialization: Software Engineering and Data Structures, Machine Learning</p>
+                    <ul class="list-unstyled" style="line-height: 1.8;">
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Strong foundation in programming, algorithms, and database systems</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Senior project: Developed a machine learning-based recommendation system</li>
+                      <li style="margin-bottom: 12px; padding-left: 20px; text-indent: -20px;">• Graduated with Distinction</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-md-right">
+                    <span class="badge badge-info">2020 - 2024</span>
+                    <p class="text-muted small mt-2">Hyderabad, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="gsap-reveal-hero">
+              <h3 class="text-primary mb-4">Certifications & Achievements</h3>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="certification-item p-3" style="background: #fff3cd; border-radius: 8px; border: 1px solid #ffeaa7;">
+                    <h5 class="mb-1">AWS AI/ML Scholar</h5>
+                    <p class="text-muted small mb-0">Amazon Web Services • 2023</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="certification-item p-3" style="background: #fff3cd; border-radius: 8px; border: 1px solid #ffeaa7;">
+                    <h5 class="mb-1">AI Programming with Python Nanodegree</h5>
+                    <p class="text-muted small mb-0">Udacity • 2023</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="certification-item p-3" style="background: #fff3cd; border-radius: 8px; border: 1px solid #ffeaa7;">
+                    <h5 class="mb-1">Machine Learning Specialization</h5>
+                    <p class="text-muted small mb-0">Stanford University (Coursera) • 2024</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="certification-item p-3" style="background: #fff3cd; border-radius: 8px; border: 1px solid #ffeaa7;">
+                    <h5 class="mb-1">Data Engineering Certificate</h5>
+                    <p class="text-muted small mb-0">DataCamp • 2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="untree_co-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 text-center mx-auto">
+            <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Let's Connect</strong></h2>
+            <p class="gsap-reveal-hero">I'm actively seeking data roles starting May 2026. Let's discuss how I can contribute to your team.</p>
+
+            <div class="wave gsap-reveal-hero" >
+              <svg>
+                <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" placeholder="Firstname">
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" class="form-control" placeholder="Lastname">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <input type="email" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Write your message..."></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 form-group">
+                  <input type="submit" class="btn btn-black" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-info p-4" style="background: #f8f9fa; border-radius: 8px; height: 100%;">
+              <h4 class="mb-4 text-primary">Let's Connect!</h4>
+              <div class="contact-item mb-3">
+                <p class="mb-2"><strong>📧 Email</strong></p>
+                <p class="text-muted">harsithkarne@gmail.com</p>
+              </div>
+              <div class="contact-item mb-3">
+                <p class="mb-2"><strong>📱 Phone</strong></p>
+                <p class="text-muted">+1 (425) 500-9089</p>
+              </div>
+              <div class="contact-item mb-3">
+                <p class="mb-2"><strong>💼 LinkedIn</strong></p>
+                <p class="text-muted"><a href="https://www.linkedin.com/in/harsith-karne" target="_blank">linkedin.com/in/harsith-karne</a></p>
+              </div>
+              <div class="contact-item mb-3">
+                <p class="mb-2"><strong>💻 GitHub</strong></p>
+                <p class="text-muted"><a href="https://github.com/hkarne?tab=repositories" target="_blank">github.com/hkarne</a></p>
+              </div>
+              <div class="contact-item">
+                <p class="mb-2"><strong>🌎 Work Authorization</strong></p>
+                <p class="text-success"><strong>No visa sponsorship required</strong></p>
+                <p class="text-muted">Open to onsite/remote • Willing to relocate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Navigation</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#portfolio-section">Projects</a></li>
+                <li><a href="#services-section">Skills</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Technologies</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="https://github.com/hkarne/Natural-Language-to-SQL-AI-Agent" target="_blank">Python</a></li>
+                <li><a href="https://github.com/hkarne/E-Commerce-Analytics-Platform" target="_blank">SQL</a></li>
+                <li><a href="#services-section">AWS</a></li>
+                <li><a href="#services-section">Machine Learning</a></li>
+                <li><a href="#services-section">Data Engineering</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Career Focus</h3>
+              <ul class="list-unstyled float-left links">
+                <li><a href="#about-section">Data Engineering</a></li>
+                <li><a href="#about-section">Data Science</a></li>
+                <li><a href="#about-section">Data Analytics</a></li>
+                <li><a href="#about-section">AI/ML Roles</a></li>
+                <li><a href="#contact-section">Available May 2026</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>Open to onsite/remote • No visa sponsorship required</address>
+              <ul class="list-unstyled links mb-4">
+                <li><a href="tel:+14255009089">+1 (425) 500-9089</a></li>
+                <li><a href="mailto:harsithkarne@gmail.com">harsithkarne@gmail.com</a></li>
+              </ul>
+
+              <h3>Connect</h3>
+              <ul class="list-unstyled social">
+                <li><a href="https://www.linkedin.com/in/harsith-karne" target="_blank"><span class="icon-linkedin"></span></a></li>
+                <li><a href="https://github.com/hkarne?tab=repositories" target="_blank"><span class="icon-github"></span></a></li>
+              </ul>
+
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+
+        </div> <!-- /.row -->
+
+
+
+
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+
+              **==========
+            -->
+            <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+            </p>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wave-animate.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic.animation.gsap.min.js"></script>
+
+
+    <script src="js/custom.js"></script>
+    
+  </body>
+
+  </html>
