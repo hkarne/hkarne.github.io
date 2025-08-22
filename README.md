@@ -48,4 +48,4 @@ This is my personal portfolio website showcasing my expertise in data engineerin
 
 **Available for opportunities starting May 2026**
 
-*This portfolio website was built using a minimal, clean template and customized to showcase data science and AI expertise.*
+*This portfolio website was built using a minimal, clean template and customized to showcase data science and AI expertise.*# harsith.github.io
